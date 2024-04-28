@@ -1,0 +1,202 @@
+.onboarding{
+  border-top:solid 1px rgb(154,154,154) ;
+}
+.onboarding form {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+width: 100%;
+height: 100vh;
+}
+
+.onboarding form section {
+display: flex;
+flex-direction: column;
+padding: 1vw 3vw;
+width: 30vw;
+text-align: start;
+}
+
+.onboarding form input {
+padding: 1vw 1vw;
+margin: 1vh 0;
+font-size: 1vw;
+border: solid 2px rgb(219, 219, 219);
+border-radius: 10px;
+}
+
+.skill-search-container{
+display: flex;
+position: relative;
+}
+
+.skill-search-input{
+width: 100%;
+display: flex;
+flex-direction: row;
+align-items: center;
+flex-wrap: wrap;
+gap: 8px;
+padding: 0% 5px;
+border:1px solid #ccc;
+border-radius: 10px;
+}
+
+.skill-search-input #skills{
+border: none;
+outline: none;
+padding: 0.5vw 1vw;
+display: flex;
+align-items: center;
+
+}
+.skill-search-input #skills:focus{
+outline: none;
+}
+
+.suggestion_list{
+max-height: 300px;
+overflow-y: scroll;
+list-style: none;
+padding: 0;
+margin: 0;
+position: absolute;
+background-color: #fff;
+border: 1px solid #ccc;
+}
+
+.suggestion_list li{
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 8px 10px;
+cursor: pointer;
+border-bottom: 1px solid #ccc;
+}
+
+.suggestion_list li:last-child{
+border-bottom: none;
+}
+
+.suggestion_list li:hover{
+background-color: #ccc;
+}
+
+.onboarding form .drop_down{
+padding: 1vw 1vw;
+margin: 1vh 0;
+font-size: 1vw;
+border: solid 2px rgb(219, 219, 219);
+border-radius: 10px;
+}
+
+.onboarding form textarea{
+padding: 1vw 1vw;
+margin: 1vh 0;
+font-size: 1vw;
+border: solid 2px rgb(219, 219, 219);
+border-radius: 10px;
+}
+.onboarding form input::-webkit-outer-spin-button,
+.onboarding form input::-webkit-inner-spin-button {
+-webki-appearance: none;
+margin: 0;
+}
+
+.onboarding form label {
+margin: 10px 0;
+}
+
+.onboarding form textarea {
+margin: 10px 0;
+}
+
+.onboarding form .multiple-input-container {
+display: flex;
+}
+
+.onboarding form .multiple-input-container input {
+margin-right: 10px;
+}
+
+.onboarding form .multiple-input-container label {
+padding: 10px;
+border: solid 2px rgb(144, 144, 144);
+border-radius: 10px;
+transition: all 0.3s;
+margin-right: 10px;
+}
+
+.onboarding form .multiple-input-container input[type="radio"] {
+display: none;
+}
+
+.onboarding form input[type="radio"]:checked + label {
+border: solid 2px rgb(0, 0, 0);
+}
+
+.onboarding form input[type="number"] {
+width: 20%;
+}
+
+.onboarding form input[type="submit"]:active {
+background: linear-gradient(45deg, rgb(0, 0, 0), rgb(79, 76, 76));
+color: white;
+}
+.onboarding section .photo-container {
+width: 100%;
+height: 58%;
+}
+.onboarding section .photo-container img {
+width: 100%;
+height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+.onboarding form {
+  font-size: 3vw;
+}
+
+.onboarding h2 {
+  font-size: 5vw;
+}
+.onboarding form section {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  text-align: start;
+}
+
+.onboarding form input {
+  padding: 3vw;
+  margin: 2vh 0;
+  font-size: 3vw;
+  border: solid 2px rgb(219, 219, 219);
+  border-radius: 10px;
+}
+
+.onboarding form .drop_down{
+  font-size: 3vw;
+}
+
+.onboarding form textarea{
+  font-size: 3vw;
+}
+
+.onboarding form label {
+  margin: 1vh 0;
+}
+
+.onboarding form .multiple-input-container input {
+  margin-right: 10px;
+}
+
+.onboarding form input[type="number"] {
+  width: 60%;
+}
+.onboarding section .photo-container img {
+  width: 100%;
+  height: 95%;
+}
+}

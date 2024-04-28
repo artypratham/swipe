@@ -1,0 +1,186 @@
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+.dashboard .swipe-container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.swipe {
+  position: absolute;
+}
+
+.dashboard .card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35%;
+  height: 60vh;
+}
+
+.card {
+  /* padding  -top: 1vh; */
+  padding-left: 1.5vw;
+  width: 600px;
+  height: 500px;
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center;
+  background: linear-gradient(45deg, rgb(255, 255, 255), rgb(255, 255, 255));
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: -100px;
+  /* align-items: center; */
+}
+
+.card1 {
+  width: 250px;
+  height: 500px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  /* border-radius: 30px; */
+  background-size: cover;
+  background-position: center;
+  margin-left: -131px;
+  
+}
+
+.user-bio-data {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  width: 60%;
+}
+
+.swipe:last-of-type {
+}
+
+.users-name {
+  font-size: 2.5vw;
+  color: black;
+  margin-top: 5vh;
+}
+
+.user-about-me {
+  color: rgb(0, 0, 0);
+  margin-top: 1vh;
+  background-color: #ffffff;
+  padding: 10px 0px;
+  width: 24vw;
+  /* font-size: medium; */
+  text-align: left;
+  font-size: 1vw;
+  border-radius: 7px;
+}
+
+.user-looking-for{
+  background-color: #ecff7f;
+  padding: 6px 20px;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  border-radius: 50px;
+  font-size: smaller ;
+  &:hover{
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    
+}
+}
+
+.user-skills-data {
+  color: black;
+  margin-top: 1vh;
+  font-size: 0.8vw;
+  /* background-color: rgb(24, 24, 24); */
+  padding: 10px ;
+  border-radius: 10px;
+  
+
+}
+
+.skill-button {
+  &:hover{
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+    
+}
+}
+
+.round-button {
+  width: 2em;
+  height: 25px;
+  background-color: black;
+  border-radius: 20px;
+  padding-top: 5px;
+  cursor: pointer;
+
+}
+
+.icon {
+  color: white;
+}
+
+.socials-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 10px 0px;
+  width: max-content;
+  margin-top: 3vh;
+  border-radius: 7px;
+  justify-content: center;
+}
+
+.dashboard .swipe-info {
+  position: absolute;
+  bottom: 0;
+  font-size: 1.5vw;
+  font-weight: 600;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .dashboard {
+    flex: none;
+    justify-content: center;
+  }
+  .dashboard .swipe-container {
+    height: 100vh;
+  }
+  .dashboard .card-container {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .card {
+    width: 75vw;
+    height: 75vh;
+  }
+
+  .swipe:last-of-type {
+  }
+
+  .card h3 {
+    margin-top: 0;
+    font-size: 5vw;
+  }
+
+  .dashboard .swipe-info {
+    bottom: 1%;
+    font-size: 5vw;
+    font-weight: 600;
+  }
+}
+
+
+

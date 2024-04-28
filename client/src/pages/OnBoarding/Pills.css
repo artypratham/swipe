@@ -1,0 +1,12 @@
+.skill-pill{
+    height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #F0F0F0;
+    color: #000;
+    margin-top: 0.8vh;
+    padding: 5px 10px;
+    border-radius: 16px;
+    cursor: pointer;
+}
