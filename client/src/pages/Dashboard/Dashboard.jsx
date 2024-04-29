@@ -17,7 +17,7 @@ const Dashboard = () => {
 
   const getUser = async () => {
     try {
-      const response = await axios.get("http://localhost:8000/user", {
+      const response = await axios.get("https://swipe-server.vercel.app/user", {
         params: { userId },
       });
       setUser(response.data);
@@ -28,7 +28,7 @@ const Dashboard = () => {
 
   const getUsers = async () => {
     try {
-      const response = await axios.get("http://localhost:8000/users", {
+      const response = await axios.get("https://swipe-server.vercel.app/users", {
         params: { userId },
       });
       setUsers(response.data);
@@ -49,7 +49,7 @@ const Dashboard = () => {
 
   const updateMatches = async (matchedUserId) => {
     try {
-      await axios.put("http://localhost:8000/addmatch", {
+      await axios.put("https://swipe-server.vercel.app/addmatch", {
         userId,
         matchedUserId,
       });

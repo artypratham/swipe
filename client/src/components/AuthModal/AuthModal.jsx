@@ -27,7 +27,7 @@ const AuthModal = ({ setShowModal, isSignUp }) => {
         return;
       }
       const response = await axios.post(
-        `http://localhost:8000/${isSignUp ? "signup" : "login"}`,
+        `https://swipe-server.vercel.app/${isSignUp ? "signup" : "login"}`,
         { email, password }
       );
       setCookie("AuthToken", response.data.token);

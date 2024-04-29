@@ -14,7 +14,7 @@ const MatchesDisplay = ({ matches, setClickedUser }) => {
 
   const getMatches = async () => {
     try{
-      const response = await axios.get('http://localhost:8000/users1',{
+      const response = await axios.get('https://swipe-server.vercel.app/users1',{
 
         params: {userIds: JSON.stringify(matchedUserIds)}
       })

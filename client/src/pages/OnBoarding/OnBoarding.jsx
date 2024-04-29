@@ -252,7 +252,7 @@ const OnBoarding = () => {
     }; // Include selectedSkillsSet in formData
     try {
       const response = await axios.put(
-        "http://localhost:8000/user",
+        "https://swipe-server.vercel.app/user",
         updatedFormData
       ); // Send updatedFormData to backend
       const success = response.status === 200;
