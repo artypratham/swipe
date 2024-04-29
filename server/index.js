@@ -9,7 +9,7 @@ require("dotenv").config();
 const app = express();
 app.use(cors(
   {
-    origin: [""],
+    origin: ["https://swipe-frontend-six.vercel.app/"],
     methods: ["GET","POST","PUT"],
     credentials: true
   }
