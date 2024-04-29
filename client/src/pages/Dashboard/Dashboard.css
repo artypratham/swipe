@@ -182,5 +182,16 @@
   }
 }
 
-
+.socialButton{
+  background-color: #000000;
+    color : white;
+    margin-right: 15px;
+    padding: 5px 15px;
+    border-radius : 200px;
+    font-size: smaller;
+    &:hover{
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        
+    }
+}
 

@@ -4,8 +4,7 @@ import ChatContainer from "../../components/ChatContainer/ChatContainer";
 import "./Dashboard.css";
 import axios from "axios";
 import { useCookies } from "react-cookie";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
 
 const Dashboard = () => {
   const [lastDirection, setLastDirection] = useState();
@@ -144,15 +143,12 @@ const Dashboard = () => {
                       <div className="socials-icon">
                         <div className="round-button">
                           <a href={user.git_url}>
-                            <FontAwesomeIcon icon={faGithub} className="icon" />
+                            <GithubButton className="socialButton" ></GithubButton>
                           </a>
                         </div>
                         <div className="round-button">
                           <a href={user.linkedin_url}>
-                            <FontAwesomeIcon
-                              icon={faLinkedin}
-                              className="icon"
-                            />
+                          <LinkedinButton className="socialButton" ></LinkedinButton>
                           </a>
                         </div>
                         <div className="user-looking-for">Looking for {user.look_for}</div>
