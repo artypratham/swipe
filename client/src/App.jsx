@@ -12,9 +12,9 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/dashboard" element={<Dashboard/>}/>
-        <Route path="/onboarding" element={<OnBoarding/>}/>
+        <Route path="https://swipe-server.vercel.app/" element={<Home/>}/>
+        <Route path="https://swipe-server.vercel.app/dashboard" element={<Dashboard/>}/>
+        <Route path="https://swipe-server.vercel.app/onboarding" element={<OnBoarding/>}/>
         {/* <Route path="/chat" element={<ChatContainer />} /> */}
       </Routes>
     </BrowserRouter>
